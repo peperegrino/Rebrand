@@ -1,0 +1,37 @@
+.section-tab-bar {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.section-tab-bar__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  gap: 0;
+}
+
+.section-tab-bar__tab {
+  padding: 14px 20px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  margin-bottom: -1px;
+}
+
+.section-tab-bar__tab:hover {
+  color: var(--text-secondary);
+}
+
+.section-tab-bar__tab--active {
+  color: var(--text-primary);
+  border-bottom-color: var(--green);
+}

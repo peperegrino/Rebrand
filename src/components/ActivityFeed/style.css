@@ -1,0 +1,40 @@
+.activity-feed {
+  background: var(--bg-card);
+  border-right: 1px solid var(--border);
+}
+
+.activity-feed__tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  padding: 0 8px;
+}
+
+.activity-feed__tab {
+  padding: 12px 14px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  margin-bottom: -1px;
+}
+
+.activity-feed__tab:hover {
+  color: var(--text-secondary);
+}
+
+.activity-feed__tab--active {
+  color: var(--green);
+  border-bottom-color: var(--green);
+}
+
+.activity-feed__list {
+  display: flex;
+  flex-direction: column;
+}

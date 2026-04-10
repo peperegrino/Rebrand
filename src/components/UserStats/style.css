@@ -1,0 +1,40 @@
+.user-stats {
+  display: flex;
+  gap: 0;
+}
+
+.user-stats__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 12px 8px;
+  border-right: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.user-stats__item:last-child {
+  border-right: none;
+}
+
+.user-stats__item:hover {
+  background: var(--bg-hover);
+}
+
+.user-stats__value {
+  font-family: var(--font-display);
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.user-stats__label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
